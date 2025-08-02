@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yauheni Kalenski</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         body {
             font-family: sans-serif;
@@ -55,6 +56,17 @@
             max-width: 100%;
             border-radius: 8px;
         }
+        .entrepreneur {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .entrepreneur img {
+            max-width: 200px;
+        }
         footer {
             text-align: center;
             background: #19729d;
@@ -62,9 +74,21 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+        .social-icons {
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
         @media (max-width: 600px) {
             nav { text-align: center; }
             .skills { flex-direction: column; align-items: center; }
+            .entrepreneur { flex-direction: column; }
         }
     </style>
 </head>
@@ -93,10 +117,20 @@
         <div class="skill"><img src="skill4.png" alt="ML" /><p>ML architecture design</p></div>
     </div>
 
-    <p class="center">I am working as individual entrepreneur in Poland. <br>You can check my organisation information <a href="#">here</a>.</p>
+    <div class="entrepreneur">
+        <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">
+            <img src="ceidg.png" alt="CEIDG">
+        </a>
+        <p>I am working as individual entrepreneur in Poland.<br>
+            You can check my organisation information <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">here</a>.</p>
+    </div>
 </main>
 <footer>
     Get in touch: <a href="mailto:yauheni@kalenski.dev" style="color:white;">yauheni@kalenski.dev</a>
+    <div class="social-icons">
+        <a href="mailto:yauheni@kalenski.dev" aria-label="Email"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/yauheni-kalenski/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </div>
 </footer>
 </body>
 </html>
