@@ -6,6 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yauheni Kalenski</title>
     <style>
+        .container {
+            display: flex;
+        }
+        nav {
+            background: #222;
+            color: white;
+            padding: 1rem;
+            min-width: 220px;
+            height: 100vh;
+            box-sizing: border-box;
+            position: fixed;
+        }
+        nav a {
+            display: block;
+            color: #8ecae6;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+        main {
+            margin-left: 240px;
+            padding: 1rem;
+            max-width: 900px;
+        }
+        .profile {
+            max-width: 220px;
+        }
+        .skill img {
+            max-width: 100%;
+            max-height: 180px;
+        }
+        .entrepreneur img {
+            max-width: 300px;
+        }
+
         body {
             font-family: sans-serif;
             margin: 0;
@@ -92,44 +126,46 @@
     </style>
 </head>
 <body>
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Aura Tarot account deletion</a>
-    <a href="#">Aura Tarot Privacy Policy</a>
-</nav>
-<header>
-    <h1>Yauheni Kalenski</h1>
-</header>
-<main>
-    <div class="center">
-        <img src="profile.png" alt="Yauheni" class="profile" />
-    </div>
-    <p>Welcome to my professional space! I'm Yauheni Kalenski, and I've been immersed in the world of web development since 2011.</p>
-    <p>As a full stack developer, I have a solid foundation in back-end technologies, especially Java, which enables me to build robust and scalable applications.</p>
-    <p>Feel free to explore my portfolio and reach out if you'd like to discuss potential collaborations!</p>
+<div class="container">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Aura Tarot account deletion</a>
+        <a href="privacy.html">Aura Tarot Privacy Policy</a>
+    </nav>
+    <header>
+        <h1>Yauheni Kalenski</h1>
+    </header>
+    <main>
+        <div class="center">
+            <img src="profile.png" alt="Yauheni" class="profile" />
+        </div>
+        <p>Welcome to my professional space! I'm Yauheni Kalenski, and I've been immersed in the world of web development since 2011.</p>
+        <p>As a full stack developer, I have a solid foundation in back-end technologies, especially Java, which enables me to build robust and scalable applications.</p>
+        <p>Feel free to explore my portfolio and reach out if you'd like to discuss potential collaborations!</p>
 
-    <h2 class="center">Primary Skills</h2>
-    <div class="skills">
-        <div class="skill"><img src="skill1.png" alt="Full-stack" /><p>Full-stack development</p></div>
-        <div class="skill"><img src="skill2.png" alt="Performance" /><p>Application performance optimization</p></div>
-        <div class="skill"><img src="skill3.png" alt="Cost" /><p>Infrastructure cost reduction</p></div>
-        <div class="skill"><img src="skill4.png" alt="ML" /><p>ML architecture design</p></div>
-    </div>
+        <h2 class="center">Primary Skills</h2>
+        <div class="skills">
+            <div class="skill"><img src="skill1.png" alt="Full-stack" /><p>Full-stack development</p></div>
+            <div class="skill"><img src="skill2.png" alt="Performance" /><p>Application performance optimization</p></div>
+            <div class="skill"><img src="skill3.png" alt="Cost" /><p>Infrastructure cost reduction</p></div>
+            <div class="skill"><img src="skill4.png" alt="ML" /><p>ML architecture design</p></div>
+        </div>
 
-    <div class="entrepreneur">
-        <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">
-            <img src="ceidg.png" alt="CEIDG">
-        </a>
-        <p>I am working as individual entrepreneur in Poland.<br>
-            You can check my organisation information <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">here</a>.</p>
-    </div>
-</main>
-<footer>
-    Get in touch: <a href="mailto:yauheni@kalenski.dev" style="color:white;">yauheni@kalenski.dev</a>
-    <div class="social-icons">
-        <a href="mailto:yauheni@kalenski.dev"><img src="email-icon.png" alt="Email" width="32" height="32" /></a>
-        <a href="https://www.linkedin.com/in/yauheni-kalenski/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn" width="32" height="32" /></a>
-    </div>
-</footer>
+        <div class="entrepreneur">
+            <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">
+                <img src="ceidg.png" alt="CEIDG">
+            </a>
+            <p>I am working as individual entrepreneur in Poland.<br>
+                You can check my organisation information <a href="https://aplikacja.ceidg.gov.pl/CEIDG/CEIDG.Public.UI/SearchDetails.aspx?Id=a7f842c1-1cd7-4edb-8e94-df8936b26547" target="_blank">here</a>.</p>
+        </div>
+    </main>
+    <footer>
+        Get in touch: <a href="mailto:yauheni@kalenski.dev" style="color:white;">yauheni@kalenski.dev</a>
+        <div class="social-icons">
+            <a href="mailto:yauheni@kalenski.dev"><img src="email-icon.png" alt="Email" width="32" height="32" /></a>
+            <a href="https://www.linkedin.com/in/yauheni-kalenski/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn" width="32" height="32" /></a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
